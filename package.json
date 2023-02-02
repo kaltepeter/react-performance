@@ -48,7 +48,7 @@
     "serve": "^13.0.2"
   },
   "scripts": {
-    "start": "craco start",
+    "start": "HTTPS=true SSL_CRT_FILE=localhost.pem SSL_KEY_FILE=localhost-key.pem craco start",
     "build": "craco build",
     "build:profile": "craco build --profile",
     "serve": "HTTPS=true SSL_CRT_FILE=localhost.pem SSL_KEY_FILE=localhost-key.pem serve -s build",
